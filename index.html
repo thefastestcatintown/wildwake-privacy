@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklaerung | Stonehill Adventure Golf Scorecard</title>
+  <meta
+    name="description"
+    content="Oeffentliche Datenschutzerklaerung fuer die iOS-App Stonehill Adventure Golf Scorecard."
+  >
+  <style>
+    :root {
+      color-scheme: light;
+      --pine-950: #14261d;
+      --pine-800: #234d39;
+      --pine-700: #2f654c;
+      --sand-100: #f6f1e7;
+      --sand-200: #ebdfc7;
+      --paper: rgba(255, 252, 246, 0.92);
+      --text-strong: #172019;
+      --text-soft: #4d5b53;
+      --accent: #d68b2e;
+      --line: rgba(20, 38, 29, 0.1);
+      --shadow: 0 24px 70px rgba(20, 38, 29, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Urbanist", "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--text-strong);
+      background:
+        radial-gradient(circle at top left, rgba(214, 139, 46, 0.25), transparent 28%),
+        radial-gradient(circle at top right, rgba(35, 77, 57, 0.28), transparent 26%),
+        linear-gradient(180deg, #faf6ee 0%, var(--sand-100) 48%, var(--sand-200) 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(20, 38, 29, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 38, 29, 0.025) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent 88%);
+    }
+
+    .page-shell {
+      width: min(980px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 30px;
+      background:
+        linear-gradient(135deg, rgba(20, 38, 29, 0.97), rgba(35, 77, 57, 0.9)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent);
+      box-shadow: var(--shadow);
+      color: #f9f5ec;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -120px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(214, 139, 46, 0.44), transparent 68%);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      font-size: 0.84rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(249, 245, 236, 0.78);
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 12ch;
+      font-size: clamp(2.7rem, 7vw, 5rem);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: clamp(1.3rem, 2vw, 1.65rem);
+      line-height: 1.1;
+    }
+
+    .lede,
+    .meta,
+    p,
+    li {
+      font-size: 1.03rem;
+      line-height: 1.72;
+    }
+
+    .lede {
+      max-width: 58ch;
+      margin: 18px 0 0;
+      color: rgba(249, 245, 236, 0.88);
+    }
+
+    .meta {
+      margin: 18px 0 0;
+      color: rgba(249, 245, 236, 0.74);
+    }
+
+    .summary {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .content {
+      display: grid;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .card {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--paper);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 16px 36px rgba(20, 38, 29, 0.08);
+    }
+
+    .card--accent {
+      background: linear-gradient(135deg, rgba(214, 139, 46, 0.12), rgba(255, 252, 246, 0.96));
+    }
+
+    p {
+      margin: 0;
+      color: var(--text-soft);
+    }
+
+    p + p,
+    ul {
+      margin-top: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--text-soft);
+    }
+
+    strong {
+      color: var(--pine-950);
+    }
+
+    a {
+      color: var(--pine-700);
+    }
+
+    .contact {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 12px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(35, 77, 57, 0.08);
+      border: 1px solid rgba(35, 77, 57, 0.14);
+      color: var(--pine-800);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .footnote {
+      margin-top: 18px;
+      font-size: 0.95rem;
+      color: rgba(77, 91, 83, 0.95);
+    }
+
+    @media (max-width: 760px) {
+      .page-shell {
+        width: min(100% - 18px, 760px);
+        padding: 18px 0 36px;
+      }
+
+      .hero,
+      .card {
+        padding: 22px;
+        border-radius: 22px;
+      }
+
+      h1 {
+        max-width: none;
+      }
+
+      .contact {
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Stonehill Adventure Golf Scorecard</p>
+      <h1>Datenschutzerklaerung</h1>
+      <p class="lede">
+        Damit auf der Runde nur die Putts spannend sind und nicht der Datenschutz, findest du hier
+        in klarer Form, welche Daten die App verarbeitet und wie Firebase von Google dabei
+        eingesetzt wird.
+      </p>
+      <p class="meta">Stand: 17. April 2026</p>
+      <div class="summary">
+        Keine Werbung. Kein Verkauf personenbezogener Daten. Die App dient als digitale Scorecard
+        fuer Freizeit- und Adventure-Golf-Runden.
+      </div>
+    </header>
+
+    <main class="content" aria-label="Datenschutzhinweise">
+      <section class="card card--accent">
+        <h2>1. Titel</h2>
+        <p>Datenschutzerklaerung fuer die iOS-App Stonehill Adventure Golf Scorecard.</p>
+      </section>
+
+      <section class="card">
+        <h2>2. Verantwortlicher</h2>
+        <p>Verantwortlich fuer die Datenverarbeitung im Zusammenhang mit dieser App ist Christopher Eschenbecher.</p>
+      </section>
+
+      <section class="card">
+        <h2>3. Zweck der App</h2>
+        <p>
+          Die App ist eine Freizeit- und Adventure-Golf-Scorecard. Sie hilft dabei, Spielerinnen und
+          Spieler anzulegen, Scores zu erfassen, Spielstaende zu speichern und den Fortschritt einer
+          Runde anzuzeigen. Zusaetzlich kann die App begleitende Inhalte wie Oeffnungszeiten, Wetter
+          oder News bereitstellen.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>4. Welche Daten verarbeitet werden</h2>
+        <p>Je nach Nutzung koennen insbesondere folgende Daten verarbeitet werden:</p>
+        <ul>
+          <li>Spielernamen, die in der App eingegeben werden</li>
+          <li>Scores, Zwischenergebnisse und Spielverlauf</li>
+          <li>Informationen zum Fortschritt einer laufenden oder pausierten Runde</li>
+          <li>technische Geraete- und Verbindungsdaten wie IP-Adresse, Zeitpunkte von Anfragen, Browser- oder App-Header und Server-Logdaten</li>
+          <li>Inhalte, die fuer die technische Bereitstellung von News oder Oeffnungszeiten abgefragt werden</li>
+        </ul>
+        <p>
+          Nach dem derzeit im Projekt erkennbaren Stand werden Werbedienste nicht eingesetzt und es
+          findet kein Verkauf personenbezogener Daten zu Werbezwecken statt.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>5. Firebase</h2>
+        <p>
+          Die App nutzt Firebase von Google als technische Plattform fuer einzelne Backend-Funktionen.
+          Im aktuell erkennbaren Stand werden insbesondere <strong>Firebase Cloud Functions</strong>
+          fuer App-Funktionen und <strong>Cloud Firestore</strong> fuer die Bereitstellung von
+          Inhalten wie News verwendet.
+        </p>
+        <p>
+          Soweit Spielstaende oder andere App-Daten lokal auf dem Geraet gespeichert werden, bleiben
+          diese zunaechst dort. Soweit bestimmte Inhalte oder Daten ueber Firebase bereitgestellt oder
+          verarbeitet werden, kann eine Uebermittlung an Firebase-Server erfolgen.
+        </p>
+        <p>
+          Andere Firebase-Dienste wie Analytics, Crashlytics, Auth oder Storage werden in dieser
+          Datenschutzerklaerung nicht als aktiv behauptet, sofern sie nicht tatsaechlich eingesetzt
+          werden.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>6. Speicherung und Uebermittlung</h2>
+        <p>
+          Eingegebene Spieler- und Score-Daten koennen lokal auf dem Geraet gespeichert werden, damit
+          eine Runde spaeter fortgesetzt oder angezeigt werden kann. Bei der Nutzung von Online-
+          Funktionen koennen Daten an technische Dienstleister uebermittelt werden.
+        </p>
+        <p>
+          Dazu gehoeren insbesondere Anfragen an Firebase von Google sowie, je nach Funktion,
+          weitere externe Dienste wie Wetter- oder Standortdatenanbieter. Bei diesen Zugriffen koennen
+          technisch erforderliche Daten wie IP-Adresse, Anfragezeitpunkt, Antwortdaten, Logdaten oder
+          Sicherheitsinformationen verarbeitet werden.
+        </p>
+        <p>
+          Die Uebermittlung an Firebase-Server erfolgt nur insoweit, wie dies fuer die technische
+          Bereitstellung der jeweiligen Funktion erforderlich ist.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>7. Weitergabe an Dritte</h2>
+        <p>
+          Eine Weitergabe personenbezogener Daten an Dritte erfolgt nicht fuer Werbezwecke und nicht
+          durch Verkauf von Daten. Eine Weitergabe kann jedoch stattfinden, wenn externe technische
+          Dienstleister fuer den Betrieb der App-Funktionen eingebunden sind, insbesondere Firebase von
+          Google oder weitere Infrastruktur- und Inhaltsanbieter.
+        </p>
+        <p>
+          Soweit solche Anbieter Daten als Auftragsverarbeiter oder eigenstaendige technische Anbieter
+          erhalten, beschraenkt sich dies auf das fuer die jeweilige Funktion notwendige Mass.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>8. Loeschung</h2>
+        <p>
+          Lokal gespeicherte Spiel- und Score-Daten koennen geloescht werden, indem sie in der App
+          entfernt oder die App deinstalliert wird, soweit keine gesonderte serverseitige Speicherung
+          erfolgt.
+        </p>
+        <p>
+          Soweit Daten ueber Firebase oder andere technische Dienste verarbeitet werden, richtet sich
+          die Speicherdauer nach dem jeweiligen Zweck, nach gesetzlichen Aufbewahrungspflichten und
+          nach den technisch eingesetzten Diensten. Auf Anfrage wird geprueft, welche Loeschung im
+          konkreten Fall moeglich ist.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>9. Rechtsgrundlagen nach DSGVO</h2>
+        <p>
+          Die Verarbeitung erfolgt je nach Funktion auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO,
+          soweit Daten zur Bereitstellung der App und ihrer gewuenschten Funktionen erforderlich sind,
+          sowie auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aufgrund des berechtigten Interesses an
+          einem sicheren, stabilen und nutzerfreundlichen Betrieb der App.
+        </p>
+        <p>
+          Soweit eine Verarbeitung auf einer freiwilligen Eingabe oder Nutzung bestimmter Funktionen
+          beruht, kann zusaetzlich Art. 6 Abs. 1 lit. a DSGVO einschlaegig sein.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>10. Kontakt</h2>
+        <p>
+          Fragen zum Datenschutz rund um Stonehill Adventure Golf Scorecard koennen jederzeit an die
+          folgende Adresse gesendet werden:
+        </p>
+        <a class="contact" href="mailto:kontakt@yogamitchris.de">kontakt@yogamitchris.de</a>
+        <p class="footnote">
+          Wenn du Auskunft, Berichtigung, Loeschung oder weitere Datenschutzrechte geltend machen
+          moechtest, nutze bitte ebenfalls diese Kontaktadresse.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
